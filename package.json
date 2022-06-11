@@ -1,0 +1,25 @@
+{
+  "name": "wordle",
+  "version": "1.0.0",
+  "description": "A test app to help with solving the wordle",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "webpack -w"
+  },
+  "author": "JD Corral",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.18.2",
+    "axios": "^0.27.2",
+    "babel-loader": "^8.2.5",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.17.12",
+    "webpack-cli": "^4.9.2"
+  }
+}

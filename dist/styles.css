@@ -1,0 +1,32 @@
+.wordBox {
+  height: 40px;
+  width: 40px;
+  background-color: beige;
+  font-size: 22px;
+  text-align: center;
+  border-width: 2px;
+  border-color: slategray;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+body {
+  color: black;
+  background-color: aliceblue;
+}
+
+.page {
+  font-size: large;
+  color: rgb(30, 71, 78);
+}
+
+#app{
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
