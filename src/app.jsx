@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Form from './form.jsx';
+import Search from './search.jsx';
 
 let App = (props) => {
 
@@ -55,6 +56,7 @@ let App = (props) => {
       </div>
       )}
       </div>
+      <Search/>
     </div>
   )
 }
