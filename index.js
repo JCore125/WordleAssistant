@@ -6,9 +6,14 @@ const axios = require('axios');
 
 app.use(express.static('public'));
 app.use(express.json());
-console.log(path.join(__dirname, '../public/index.html'));
+
+let url = `https://api.datamuse.com`
+
+// app.get('/query', (req, res) => {
+
+// })
 
 app.use(express.static('./dist'));
 app.listen(port, () => {
   console.log(`listening on port ${port}`)
-})
+})          

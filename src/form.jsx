@@ -19,7 +19,7 @@ let Form = (props) => {
     e.preventDefault();
     let str = '';
     if(one.box !== 'green') {
-      let color = prompt('What color was box one?');
+      let color = prompt('What color was box one: ' + one.letter + ' ?');
       let temp = {...one};
       if(color === 'green'){
         temp.box = 'green';
@@ -41,7 +41,7 @@ let Form = (props) => {
       str += one.letter;
     }
     if(two.box !== 'green') {
-      let color = prompt('What color was box two?');
+      let color = prompt('What color was box two: ' + two.letter + ' ?');
       let temp = {...two};
       if(color === 'green'){
         temp.box = 'green';
@@ -63,7 +63,7 @@ let Form = (props) => {
       str += two.letter;
     }
     if(three.box !== 'green') {
-      let color = prompt('What color was box three?');
+      let color = prompt('What color was box three: ' + three.letter + ' ?');
       let temp = {...three};
       if(color === 'green'){
         temp.box = 'green';
@@ -85,7 +85,7 @@ let Form = (props) => {
       str += three.letter;
     }
     if(four.box !== 'green') {
-      let color = prompt('What color was box four?');
+      let color = prompt('What color was box four: ' + four.letter + ' ?');
       let temp = {...four};
       if(color === 'green'){
         temp.box = 'green';
@@ -108,7 +108,7 @@ let Form = (props) => {
       str += four.letter;
     }
     if(five.box !== 'green') {
-      let color = prompt('What color was box five?');
+      let color = prompt('What color was box five: ' + five.letter + ' ?');
       let temp = {...five};
       if(color === 'green'){
         temp.box = 'green';

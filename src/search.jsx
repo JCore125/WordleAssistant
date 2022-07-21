@@ -9,13 +9,15 @@ let Search = (props) => {
     setQuery(e.target.value);
   }
 
-  const handleSubmit = () => {
-    axios.get(`https://api.datamuse.com/words?sp=${str}`)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("QUERYING" + query)
+    axios.get(`https://api.datamuse.com/words?sp=${query}`)
       .then((res) => {
         let data = res.data;
         let temp = [];
-        data.word.forEach((word) => {
-          temp.push(word);
+        data.forEach((word) => {
+          temp.push(word.word)
         })
         return temp
       })
@@ -30,12 +32,11 @@ let Search = (props) => {
   return(
     <div>
       <form onSubmit={handleSubmit}>
-        <input type='text' onChange={handleChange}required></input>
+        <input type='text' onChange={handleChange}minlength="5" maxlength="5"required></input>
       </form>
-      <div>
-        {queries.length > 0 ? queries : ''}
+      <div className="queries">
+        {queries.length > 0 ? queries.map((item) => <div>{item}</div>) : ''}
       </div>
-      <h1>HELLO?</h1>
     </div>
   )
 }

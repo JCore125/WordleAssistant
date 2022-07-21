@@ -27,6 +27,12 @@ body {
 
 span {
   font-weight: bold;
-  margin-bottom: 30px;
+
+}
+
+.queries{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 

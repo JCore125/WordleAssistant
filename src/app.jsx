@@ -55,6 +55,8 @@ let App = (props) => {
         {data}
       </div>
       )}
+      <br></br>
+      <div>Check a word database yourself! Use "?" for wildcards.</div>
       </div>
       <Search/>
     </div>
