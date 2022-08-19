@@ -51,7 +51,7 @@ let App = (props) => {
       <div><span>Letters you have yet to use:</span> </div>
       <div>{alphabet}</div>
       <div>{suggestions.map((data, index) =>
-      <div>
+      <div className="suggestions">
         {data}
       </div>
       )}
